@@ -1,0 +1,2 @@
+code,batch,slr,alpha,w_zhi,gaussian_weight_size
+1,8,1e-3,2.5,0.001,9

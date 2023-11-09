@@ -1,0 +1,8 @@
+epoch:20, batch_size:8, mlr:2e-4, shutter:hamiltonrgbw, 
+interpolation:gaussian, decoder:unetres, bool_noise:True, noise_std:0.015, loss:l2, vis_interval:1, 
+epoch:20, batch_size:8, mlr:2e-4, shutter:hamiltonrgbw, 
+interpolation:gaussian, decoder:unetres, bool_noise:True, noise_std:0.015, loss:l2, vis_interval:1, 
+epoch:20, batch_size:8, mlr:2e-4, shutter:hamiltonrgbw, 
+interpolation:gaussian, decoder:unetres, bool_noise:True, noise_std:0.015, loss:l2, vis_interval:1, 
+epoch:20, batch_size:8, mlr:2e-4, shutter:hamiltonrgbw, 
+interpolation:gaussian, decoder:unetres, bool_noise:True, noise_std:0.015, loss:l2, vis_interval:1, 
