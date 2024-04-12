@@ -1,2 +1,2 @@
-# Joint_Learning_of_RGBW_Color_Filter_Arrays_and_Demosaicking
+# Joint Learning of RGBW Color Filter Arrays and Demosaicking
 Are being updated
