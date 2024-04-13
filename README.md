@@ -24,5 +24,10 @@ python canon_data/crop_batch.py
 * Autoencoder model (encoder network + decoder network)
   * To jointly train the RGBW CFA and demosaicking network, please execute:
   ```
-  python train/train_learn_rgbw_to_rgb.py  --split ‘train’
+  python train/train_learn_rgbw_to_rgb.py  --split 'train'
   ```
+* Decoder network
+ * Fix the learned RGBW CFA or representative RGBW CFA and train the decoder network. Please run:
+   ```
+   python train/train_rgbw_to_rgb.py  --split 'train'
+   ``` 
