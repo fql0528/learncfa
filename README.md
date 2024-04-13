@@ -4,8 +4,7 @@
 
 ## Environment installation
 We use PyTorch for training, and use custom convolutional layers to simulate RGBW CFA design and demosaicing.Assuming you have [Anaconda](https://www.anaconda.com/products/individual#Downloads):
-'''bash
+```bash
 conda create -n learncfa python=3.7
 conda activate learncfa
-pip install requirement.txt
-'''
+```
