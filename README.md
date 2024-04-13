@@ -7,4 +7,16 @@ We use PyTorch for training, and use custom convolutional layers to simulate RGB
 ```bash
 conda create -n learncfa python=3.7
 conda activate learncfa
+pip install requirement.txt
+```
+## Prepare Data
+We trained, validated, and tested using the [Gehler-Shi dataset](https://www2.cs.sfu.ca/~colour/data/shi_gehler/) dataset. As the original Gehler-Shi dataset consists of RAW format images, which were unavailable during the development of this code, we converted them into normalized 8-bit PNG files. These files can be directly inputted into the autoencoder for training, validation, and testing purposes.
+The preprocessed Gehler-Shi dataset:
+```bash
+cd canon_data/datasets
+```
+During training, we cropped the images into 128×128 blocks for training, totaling 107472 image blocks. However, validation and testing were conducted on full-size images.
+Image cropping：
+```bash
+python canon_data/crop_batch.py
 ```
