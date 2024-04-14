@@ -54,5 +54,17 @@ During testing, please ensure that the parameter settings remain exactly the sam
   * To fix the learned RGBW CFA or representative RGBW CFA and test the performance of the pre-trained decoder network, please run:
   ```
   python Test/ Test_rgbw_to_rgbw.py --test_epoch ourrgbw_20 --split 'test'
-  ``` 
+  ```
+
+## Citations
+If our autoencoder network has been helpful for your research or work, please consider citing our paper on the autoencoder network.
+```
+@article{bai4753575joint,
+  title={Joint Learning of Rgbw Color Filter Arrays and Demosaicking},
+  author={Bai, Chenyan and Liu, Faqi and Li, Jia},
+  journal={Available at SSRN 4753575}
+}
+```
+## Contact
+If you have any questions, please contact jiali.gm@gmail.com  or fql_2021@126.com
 
