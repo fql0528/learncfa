@@ -31,3 +31,10 @@ python canon_data/crop_batch.py
    ```
    python train/train_rgbw_to_rgb.py  --split 'train'
    ``` 
+## Validating
+* Autoencoder model (encoder network + decoder network)
+  * To verify the performance of the pre-trained autoencoder network and adjust the network hyperparameters, please run:
+  ```
+  python Test/ Test_learn_rgbw_to_rgbw.py  --test_epoch lrgbw_20 --split 'test'
+  ```
+ * Decoder network
