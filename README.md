@@ -1,5 +1,5 @@
 # Joint Learning of RGBW Color Filter Arrays and Demosaicking
-#### Chenyan Bai, Faqi Liu, Jia Li
+#### Chenyan Bai, Faqi Liu, Jia Li\*
 >RGBW color filter arrays (CFAs) have gained widespread attention for their superior performance in low-light conditions. Most existing demosaicking methods are tailored for specific RGBW CFAs or involve manual joint design with CFAs. The close relationship between sampling and reconstruction means that restricting the search space through predefined CFAs and demosaicking methods severely limits the ability to achieve optimal performance. In this paper, we propose a new approach for joint learning of RGBW CFA and demosaicking. This approach can simultaneously learn optimal CFAs and demosaicking methods of any size, while also being capable of reconstructing mosaicked images of any size. We use a surrogate function and arbitrary CFA interpolation to ensure end-to-end learning of the RGBW CFA. We also propose a dual-branch fusion reconstruction network that utilizes the W channel to guide the reconstruction of R, G, and B channels, reducing color errors while preserving more image details. Extensive experiments demonstrate the superiority of our proposed method.
 
 ## Environment Installation
@@ -62,14 +62,14 @@ During testing, please ensure that the parameter settings remain exactly the sam
  - ```--save_image_dir```:Reconstructed image saving directory
  - ```--test_epoch```:Validation and testing snapshot file names
  - ```--continue_epoch```:Checkpoint training starting point
- - ```----resume```:Whether to train from checkpoint
+ - ```--resume```:Whether to train from checkpoint
  - ```--block_size```:delimited list input for block size in format
  - ```--cfa_size```:CFA pattern size dimensions
  - ```--k```:Scatter-weighted interpolation k-value
  - ```--p```:Scatter-weighted interpolation p-value
  - ```--bool_noise```:Whether to add noise
  - ```-- noise_std```:Noise level
- - ```--max_epochs``:Training epochs
+ - ```--max_epochs```:Training epochs
  - ```--mlr```:Decoder network learning rate
  - ```--slr```:Encoder network learning rate
  - ```--w_zhi```:CFA pattern learning weight initialization
