@@ -11,7 +11,7 @@ pip install requirement.txt
 ```
 ## Prepare Data
 We trained, validated, and tested using the [Gehler-Shi dataset](https://www2.cs.sfu.ca/~colour/data/shi_gehler/) dataset. As the original Gehler-Shi dataset consists of RAW format images, which were unavailable during the development of this code, we converted them into normalized 8-bit PNG files. These files can be directly inputted into the autoencoder for training, validation, and testing purposes.
-The preprocessed Gehler-Shi dataset:
+The [preprocessed Gehler-Shi dataset](https://pan.baidu.com/s/1zIE-Ju1XEPmDVPmgv6G0qQ?pwd=vbxd):
 ```bash
 cd canon_data/datasets
 ```
