@@ -2,7 +2,7 @@
 #### Chenyan Bai, Faqi Liu, Jia Li
 >RGBW color filter arrays (CFAs) have gained widespread attention for their superior performance in low-light conditions. Most existing demosaicking methods are tailored for specific RGBW CFAs or involve manual joint design with CFAs. The close relationship between sampling and reconstruction means that restricting the search space through predefined CFAs and demosaicking methods severely limits the ability to achieve optimal performance. In this paper, we propose a new approach for joint learning of RGBW CFA and demosaicking. This approach can simultaneously learn optimal CFAs and demosaicking methods of any size, while also being capable of reconstructing mosaicked images of any size. We use a surrogate function and arbitrary CFA interpolation to ensure end-to-end learning of the RGBW CFA. We also propose a dual-branch fusion reconstruction network that utilizes the W channel to guide the reconstruction of R, G, and B channels, reducing color errors while preserving more image details. Extensive experiments demonstrate the superiority of our proposed method.
 
-## Environment installation
+## Environment Installation
 We use PyTorch for training, and use custom convolutional layers to simulate RGBW CFA design and demosaicing.Assuming you have [Anaconda](https://www.anaconda.com/products/individual#Downloads):
 ```bash
 conda create -n learncfa python=3.7
@@ -56,8 +56,30 @@ During testing, please ensure that the parameter settings remain exactly the sam
   python Test/ Test_rgbw_to_rgbw.py --test_epoch ourrgbw_20 --split 'test'
   ```
 
-## Parameter description
- - ```--root```:
+## Description of Some Key Parameters
+ - ```--root```:Dataset root directory
+ - ```--snapshot```:Snapshot saving directory
+ - ```--save_image_dir```:Reconstructed image saving directory
+ - ```--test_epoch```:Validation and testing snapshot file names
+ - ```--continue_epoch```:Checkpoint training starting point
+ - ```----resume```:Whether to train from checkpoint
+ - ```--block_size```:delimited list input for block size in format
+ - ```--cfa_size```:CFA pattern size dimensions
+ - ```--k```:Scatter-weighted interpolation k-value
+ - ```--p```:Scatter-weighted interpolation p-value
+ - ```--bool_noise```:Whether to add noise
+ - ```-- noise_std```:Noise level
+ - ```--max_epochs``:Training epochs
+ - ```--mlr```:Decoder network learning rate
+ - ```--slr```:Encoder network learning rate
+ - ```--w_zhi```:CFA pattern learning weight initialization
+ - ```--alpha```:Temperature coefficient for the softmax function
+ - ```--gaussian_weight_size```:Gaussian interpolation weight kernel size
+ - ```--interp```:CFA interpolation selection
+ - ```--init```:Surrogate function selection
+ - ```--loss```:Loss function selection
+ - ```--decoder```:Decoder network selection
+ - ```--shutter```:CFA pattern selection
 
 
 ## Citations
