@@ -56,6 +56,10 @@ During testing, please ensure that the parameter settings remain exactly the sam
   python Test/ Test_rgbw_to_rgbw.py --test_epoch ourrgbw_20 --split 'test'
   ```
 
+## Parameter description
+ - ```--root```:
+
+
 ## Citations
 If our autoencoder network has been helpful for your research or work, please consider citing our paper on the autoencoder network.
 ```
